@@ -12,7 +12,7 @@ app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "../uploads")));
 
 // Connect MongoDB (we will fill this later)
-mongoose.connect("process.env.MONGO_URL")
+mongoose.connect("process.env.mongodb+srv://ceaselesslogout:Makeins1@cluster0.rzuy9sl.mongodb.net/?appname=Cluster0")
     .then(() => console.log("MongoDB Connected"))
     .catch(err => console.log(err));
 
